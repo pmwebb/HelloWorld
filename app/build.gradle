@@ -6,8 +6,6 @@ plugins {
 android {
     compileSdk 31
 
-    ndkVersion = "22.1.7171670" // e.g.,  ndkVersion "21.3.6528147"
-
     defaultConfig {
         applicationId "com.pica.helloworld"
         minSdk 30
@@ -32,7 +30,8 @@ android {
         jvmTarget = '1.8'
     }
     compileSdkVersion 29
-    ndkVersion '23.1.7779620'
+//    ndkVersion '23.1.7779620'
+    ndkVersion = "22.1.7171670" // e.g.,  ndkVersion "21.3.6528147"
 }
 
 dependencies {
@@ -44,4 +43,9 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    def appCenterSdkVersion = '4.3.1'
+    implementation "com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}"
+    implementation "com.microsoft.appcenter:appcenter-crashes:${appCenterSdkVersion}"
+
 }
