@@ -6,6 +6,8 @@ plugins {
 android {
     compileSdk 31
 
+    ndkVersion = "22.1.7171670" // e.g.,  ndkVersion "21.3.6528147"
+
     defaultConfig {
         applicationId "com.pica.helloworld"
         minSdk 30
@@ -29,6 +31,8 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    compileSdkVersion 29
+    ndkVersion '23.1.7779620'
 }
 
 dependencies {
